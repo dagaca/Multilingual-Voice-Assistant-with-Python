@@ -35,12 +35,9 @@ pip install -r requirements.txt
 
 ### Türkçe Dil Seçeneği
 
-- "Çıkış" Komutu:
-
-- "Adın Ne" Komutu:
-
-- "Zaman" Komutu:
-
+- "Çıkış" Komutu
+- "Adın Ne" Komutu
+- "Zaman" Komutu
 - "Tarih" Komutu:
 
 - "Arama" Komutu:
