@@ -38,38 +38,25 @@ pip install -r requirements.txt
 - "Çıkış" Komutu
 - "Adın Ne" Komutu
 - "Zaman" Komutu
-- "Tarih" Komutu:
-
-- "Arama" Komutu:
-
-- "Çevir" Komutu:
-
-- "Web Sitesi Aç" Komutu:
-
-- "Müzik Çal" Komutu:
-
-- "Not Yaz" Komutu:
+- "Tarih" Komutu
+- "Arama" Komutu
+- "Çevir" Komutu
+- "Web Sitesi Aç" Komutu
+- "Müzik Çal" Komutu
+- "Not Yaz" Komutu
 
 
 ### İngilizce Dil Seçeneği
 
-- "Exit" Command:
-
-- "Your Name" Command:
-
-- "Time" Command:
-
-- "Date" Command:
-
-- "Search" Command:
-
-- "Translate" Command:
-
-- "Open Website" Command:
-
-- "Play Music" Command:
-
-- "Write a Note" Command:
+- "Exit" Command
+- "Your Name" Command
+- "Time" Command
+- "Date" Command
+- "Search" Command
+- "Translate" Command
+- "Open Website" Command
+- "Play Music" Command
+- "Write a Note" Command
 
 
 ## Katkılar ve Geliştirmeler
