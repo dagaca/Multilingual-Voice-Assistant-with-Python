@@ -58,13 +58,11 @@ def tarih_al():
     ingilizce_day_metin = p.number_to_words(sayisal_day)
 
 
-    # İngilizce tarih açıklamasını ve tarihi birleştir
     ingilizce_metin = f"{ingilizce_yil_metin} Year {ingilizce_ay_metin} Moon {ingilizce_day_metin} Day"
 
     try:
         tercume = GoogleTranslator(source='en', target="tr").translate(ingilizce_metin)
 
-        # Çevrilen metni sesli olarak söyle
         return tercume
     
     except Exception as e:
@@ -75,10 +73,8 @@ def cevir():
     metin_sorgusu = dinle()
 
     try:
-        # İngilizce metni çevir
         cevirisi = GoogleTranslator(source='en', target='tr').translate(metin_sorgusu)
 
-        # Çevrilen metni terminale yaz ve sesli olarak oku
         print(f"Çevrilen Metin: {cevirisi}")
         konus(f"Çevrilen Metin: {cevirisi}")
 
@@ -101,13 +97,11 @@ def wikipedia_bilgi(sorgu):
         return f"Bir hata olustu: {e}"
 
 def web_sitesi_ac(sorgu):
-    base_url = "https://www."  # Temel URL
-    end_url = ".com/"  # URL'nin sonu
+    base_url = "https://www."  
+    end_url = ".com/"
 
-    # Girilen sorguyu küçük harfe çevirip boşlukları '-' ile değiştir
     formatli_sorgu = sorgu.lower().replace(' ', '-')
 
-    # Tam URL'yi oluştur
     tam_url = f"{base_url}{formatli_sorgu}{end_url}"
 
     konus(f"{tam_url} adresini varsayilan web tarayicinizda aciyorum.")
@@ -117,10 +111,8 @@ def muzik_cal():
     konus("Tabii, hangi muzigi dinlemek istersiniz?")
     muzik_sorgu = dinle()
 
-    # YouTube arama URL'sini oluştur
     arama_url = f"https://www.youtube.com/results?search_query={muzik_sorgu.replace(' ', '+')}"
 
-    # YouTube arama sonuçlarını varsayılan web tarayıcısında aç
     webbrowser.open(arama_url)
 
     return f"YouTube'da {muzik_sorgu} aranıyor. Lütfen oynatılacak videoyu seçin."
@@ -137,10 +129,9 @@ def not_yaz():
         if "çıkış" in not_al.lower():
             break
 
-    # "not kaydet" içermeyen kısmını al, "not kaydet" ve sonrasını at
     not_al = not_al.lower().replace("not kaydet", "").strip()
 
-    dosya = open('notlar.txt', 'a')  # Notları eklemek için 'a' modunu kullanıyoruz (append)
+    dosya = open('notlar.txt', 'a')
     dosya.write(f"{not_al}\n")
     konus("Not kaydedildi.")
 

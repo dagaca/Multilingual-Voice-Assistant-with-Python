@@ -44,7 +44,6 @@ def translate():
     try:
         translate_text = GoogleTranslator(source='en', target='tr').translate(text_query)
 
-        # Çevrilen metni terminale yaz ve sesli olarak oku
         print(f"Translated Text: {translate_text}")
         speak(f"Translated Text: {translate_text}")
 
@@ -65,13 +64,11 @@ def get_wikipedia(query):
         return f"An error occurred: {e}"
 
 def open_website(query):
-    base_url = "https://www."  # Temel URL
-    end_url = ".com/"  # URL'nin sonu
+    base_url = "https://www."
+    end_url = ".com/"
 
-    # Girilen sorguyu küçük harfe çevirip boşlukları '-' ile değiştir
     formatted_query = query.lower().replace(' ', '-')
 
-    # Tam URL'yi oluştur
     full_url = f"{base_url}{formatted_query}{end_url}"
 
     speak(f"Opening {full_url} in your default web browser.")
@@ -81,10 +78,8 @@ def play_music():
     speak("Sure, what music would you like to listen to?")
     music_query = listen()
 
-    # Constructing the YouTube search URL
     search_url = f"https://www.youtube.com/results?search_query={music_query.replace(' ', '+')}"
 
-    # Open the YouTube search results in the default web browser
     webbrowser.open(search_url)
 
     return f"Searching for {music_query} on YouTube. Please select a video to play."
@@ -101,10 +96,9 @@ def write_note():
         if "exit" in note.lower():
             break
 
-    # "note save" içermeyen kısmını al, "note save" ve sonrasını at
     note = note.lower().replace("note save", "").strip()
 
-    file = open('notes.txt', 'a')  # Notları eklemek için 'a' modunu kullanıyoruz (append)
+    file = open('notes.txt', 'a')
     file.write(f"{note}\n")
     speak("Note saved.")
 
