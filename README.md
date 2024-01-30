@@ -31,6 +31,50 @@ pip install -r requirements.txt
 ```
 
 
+## Temel Komutlar
+
+### Türkçe Dil Seçeneği
+
+- "Çıkış" Komutu:
+
+- "Adın Ne" Komutu:
+
+- "Zaman" Komutu:
+
+- "Tarih" Komutu:
+
+- "Arama" Komutu:
+
+- "Çevir" Komutu:
+
+- "Web Sitesi Aç" Komutu:
+
+- "Müzik Çal" Komutu:
+
+- "Not Yaz" Komutu:
+
+
+### İngilizce Dil Seçeneği
+
+- "Exit" Command:
+
+- "Your Name" Command:
+
+- "Time" Command:
+
+- "Date" Command:
+
+- "Search" Command:
+
+- "Translate" Command:
+
+- "Open Website" Command:
+
+- "Play Music" Command:
+
+- "Write a Note" Command:
+
+
 ## Katkılar ve Geliştirmeler
 
-Projeyle ilgili her türlü katkı ve geliştirmeye açığız. Sorunlarınızı bildirebilir veya çekme istekleri gönderebilirsiniz.
+Projeye katkıda bulunmak istiyorsanız, lütfen bir konu açın veya bir çekme isteği oluşturun. Her türlü katkı ve geri bildirim memnuniyetle karşılanır.
